@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Карямин](https://up.htmlacademy.ru/adaptive/16/user/959581).
-* Наставник: Михаил Деркач.
+* Наставник: [Михаил Деркач](https://htmlacademy.ru/profile/id87719).
 
 ---
 
