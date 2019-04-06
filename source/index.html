@@ -8,28 +8,29 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="header__wrapper">
+      <a href="index.html" class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Мишка интернет магазин</h1>
@@ -42,8 +43,7 @@
             </a>
           </li>
           <li class="cute-stuff__item">
-            <a href="#">Детские игрушки
-            </a>
+            <a href="#">Детские игрушки</a>
           </li>
         </ul>
       </div>
@@ -53,7 +53,7 @@
         <header class="knitted-baskets__header">
           <h2 class="knitted-baskets__headline">Вязаные корзинки</h2>
           <b class="knitted-baskets__top-product">
-            ТОВАР НЕДЕЛИ
+            товар недели
           </b>
           <p class="knitted-baskets__description">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
@@ -129,7 +129,7 @@
         </blockquote>
         <button class="reviews__prev" type="button">Предыдущий отзыв</button>
         <button class="reviews__next" type="button">Следующий отзыв</button>
-        <a class="reviews__write button">Написать</a>
+        <a class="reviews__write button-link">Написать</a>
       </div>
     </section>
     <section class="contacts">
@@ -141,7 +141,9 @@
               e-mail:
             </td>
             <td class="contacts__value">
+              <a href="mailto:info@mimimishkashop.ru">
               info@mimimishkashop.ru
+              </a>
             </td>
           </tr>
           <tr>
@@ -159,7 +161,7 @@
 
     </section>
     <section class="write-us">
-      <a class="write-us__button button">Напиши нам</a>
+      <a class="write-us__button button-link">Напиши нам</a>
     </section>
   </main>
   <footer class="page-footer">
@@ -179,7 +181,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button-link copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
