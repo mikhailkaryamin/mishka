@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка - форма</title>
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -42,23 +41,23 @@
         </p>
         <form class="form__order" method="POST">
           <fieldset class="type">
-            <legend class="form__legend">Тип</legend>
+            <legend class="type__legend">Тип</legend>
             <ul>
-              <li class="form__option">
+              <li class="type__option">
                 <input class="visually-hidden type__input" type="radio" name="type" value="accessory"
                   id="type__accessory" checked />
                 <label for="type__accessory">Аксессуар для интерьера</label>
               </li>
-              <li class="form__option">
+              <li class="type__option">
                 <input class="visually-hidden type__input" type="radio" name="type" value="toy" id="type__toy" />
                 <label for="type__toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="color">
-            <legend class="form__legend">Цвет</legend>
+            <legend class="color__legend">Цвет</legend>
             <ul>
-              <li class="form__option">
+              <li class="color__option">
                 <input class="visually-hidden color__input color__input--white" type="checkbox" name="white" id="white" checked />
                 <label for="white">
                   Белый
@@ -86,28 +85,28 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contacts">
-            <legend class="form__legend">ФИО</legend>
-            <label class="form__option" for="name">Имя:</label>
-            <input class="contacts__name" id="name" type="text" name="name" placeholder="Введите ваше имя*" required />
-            <label class="form__option" for="surname">Фамилия:</label>
-            <input class="contacts__surname" id="surname" type="text" name="surname" placeholder="Укажите фамилию*"
+          <fieldset class="contacts-form">
+            <legend class="contacts-form__legend">ФИО</legend>
+            <label class="contacts-form__option" for="name">Имя:</label>
+            <input class="contacts-form__name" id="name" type="text" name="name" placeholder="Введите ваше имя*" required />
+            <label class="contacts-form__option" for="surname">Фамилия:</label>
+            <input class="contacts-form__surname" id="surname" type="text" name="surname" placeholder="Укажите фамилию*"
               required />
-            <label class="form__option" for="mname">Отчество:</label>
-            <input class="contacts__mname" id="mname" type="text" name="mname" placeholder="Отчество, если желаете"
+            <label class="contacts-form__option" for="mname">Отчество:</label>
+            <input class="contacts-form__mname" id="mname" type="text" name="mname" placeholder="Отчество, если желаете"
               required />
-            <label class="form__legend" for="tel">Тел</label>
-            <input class="contacts__tel" id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required />
-            <label class="form__legend" for="email">E-MAIL</label>
-            <input class="contacts__email" id="email" type="email" name="email" placeholder="Ваш Email*" required />
-            <label class="form__legend" for="add">ДОП</label>
-            <textarea class="contacts__add" id="add" name="add"
+            <label class="contacts-form__legend" for="tel">Тел</label>
+            <input class="contacts-form__tel" id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required />
+            <label class="contacts-form__legend" for="email">E-MAIL</label>
+            <input class="contacts-form__email" id="email" type="email" name="email" placeholder="Ваш Email*" required />
+            <label class="contacts-form__legend" for="add">ДОП</label>
+            <textarea class="contacts-form__add" id="add" name="add"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <small>
             <sup>*</sup>Поля обязательны для заполнения
           </small>
-          <button class="button form-button" type="submit">Отправить заказ</button>
+          <button class="button form-button--send" type="submit">Отправить заказ</button>
         </form>
       </div>
     </section>
@@ -129,7 +128,9 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button-link copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+        <a class="button-link copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </div>
   </footer>
