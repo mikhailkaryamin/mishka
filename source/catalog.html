@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка-каталог</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <div class="header__wrapper">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -38,16 +40,16 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <a href="#">
-              <img class="catalog__image-product catalog__image-product--rabbit" src="http://placehold.it/260x195"
+              <img class="catalog__image-product catalog__image-product--rabbit" src="img/photo-hare-mobile@1x.jpg"
                 width="260" height="195" alt="Зайчик-попрыгайчик">
               <p class="catalog__text"><b class="catalog__name">Зайчик-попрыгайчик</b>Рост 30 см,
                 вес 200 г</p>
-              <b>1200 руб.</b>
+              <b class="catalog__price">1200 руб.</b>
             </a>
           </li>
           <li class="catalog__item">
             <a href="#">
-              <img class="catalog__image-product catalog__image-product--basket" src="http://placehold.it/260x195"
+              <img class="catalog__image-product catalog__image-product--basket" src="img/photo-bowl-mobile@1x.jpg"
                 width="260" height="195" alt="Корзинка для белья">
               <p class="catalog__text"><b class="catalog__name">Корзинка для белья</b>Диаметр 15 см,
                 высота 10 см</p>
@@ -56,7 +58,7 @@
           </li>
           <li class="catalog__item">
             <a href="#">
-              <img class="catalog__image-product catalog__image-product--big-basket" src="http://placehold.it/260x195"
+              <img class="catalog__image-product catalog__image-product--big-basket" src="img/photo-toys-mobile@1x.jpg"
                 width="260" height="195" alt="Большая корзинка для игрушек">
               <p class="catalog__text"><b class="catalog__name">
                   Большая корзинка для игрушек</b>Диаметр 30 см, высота 30 см</p>
@@ -96,7 +98,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button-link copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button-link copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </div>
   </footer>
