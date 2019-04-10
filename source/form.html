@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка - форма</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <div class="header__wrapper">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -84,28 +85,28 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contacts">
-            <legend>ФИО</legend>
-            <label for="name">Имя:</label>
-            <input class="contacts__name" id="name" type="text" name="name" placeholder="Введите ваше имя*" required />
-            <label for="surname">Фамилия:</label>
-            <input class="contacts__surname" id="surname" type="text" name="surname" placeholder="Укажите фамилию*"
+          <fieldset class="contacts-form">
+            <legend class="contacts-form__legend">ФИО</legend>
+            <label class="contacts-form__option" for="name">Имя:</label>
+            <input class="contacts-form__name" id="name" type="text" name="name" placeholder="Введите ваше имя*" required />
+            <label class="contacts-form__option" for="surname">Фамилия:</label>
+            <input class="contacts-form__surname" id="surname" type="text" name="surname" placeholder="Укажите фамилию*"
               required />
-            <label for="mname">Отчество:</label>
-            <input class="contacts__mname" id="mname" type="text" name="mname" placeholder="Отчество, если желаете"
+            <label class="contacts-form__option" for="mname">Отчество:</label>
+            <input class="contacts-form__mname" id="mname" type="text" name="mname" placeholder="Отчество, если желаете"
               required />
-            <label for="tel">Тел</label>
-            <input class="contacts__tel" id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required />
-            <label for="email">E-MAIL</label>
-            <input class="contacts__email" id="email" type="email" name="email" placeholder="Ваш Email*" required />
-            <label for="add">ДОП</label>
-            <textarea class="contacts__add" id="add" name="add"
+            <label class="contacts-form__legend" for="tel">Тел</label>
+            <input class="contacts-form__tel" id="tel" type="tel" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required />
+            <label class="contacts-form__legend" for="email">E-MAIL</label>
+            <input class="contacts-form__email" id="email" type="email" name="email" placeholder="Ваш Email*" required />
+            <label class="contacts-form__legend" for="add">ДОП</label>
+            <textarea class="contacts-form__add" id="add" name="add"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <small>
             <sup>*</sup>Поля обязательны для заполнения
           </small>
-          <button class="button" type="submit">Отправить заказ</button>
+          <button class="button form-button--send" type="submit">Отправить заказ</button>
         </form>
       </div>
     </section>
@@ -127,7 +128,9 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button-link copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="button-link copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </div>
   </footer>
