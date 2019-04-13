@@ -66,7 +66,7 @@ a {
   left: -30px;
   width: 18px;
   height: 19px;
-  background-image: url(../img/icon-search.svg);
+  background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.2;
@@ -85,14 +85,13 @@ a {
   left: -30px;
   width: 21px;
   height: 18px;
-  background-image: url(../img/icon-cart.svg);
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.2;
 }
 
 @media (min-width: @tablet-width) {
-
   .header__wrapper {
     min-width: 668px;
     padding-left: 50px;
@@ -119,8 +118,12 @@ a {
     flex-direction: row;
     padding-left: 0;
   }
+
   .main-nav__free-shipping {
     display: block;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
   }
 
   .user-list {
@@ -161,12 +164,6 @@ a {
 
   .site-list__item {
     width: 167px;
-  }
-
-  .main-nav__free-shipping {
-    position: absolute;
-    right: 0;
-    bottom: 5px;
   }
 }
 
