@@ -1,4 +1,28 @@
-.contacts__title {
+.contacts {
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 457px;
+    bottom: 90px;
+    background-image: url(../img/map-mobile@1x.jpg);
+    z-index: -1;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 40px;
+}
+
+.contacts__headline {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -6,4 +30,107 @@
 
 .contacts__list {
   line-height: 30px;
+  padding-bottom: 500px;
+}
+
+.contacts__field {
+  width: 66px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: top;
+}
+
+.contacts__value {
+  min-width: 180px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contacts__button {
+  display: inline-block;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts::before {
+    background-image: url(../img/map-tablet@1x.jpg);
+  }
+
+  .contacts__wrapper {
+    min-width: 668px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .contacts__headline {
+    position: relative;
+    width: 100%;
+    font-size: 43px;
+    line-height: 50px;
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 47px;
+      height: 81px;
+      right: 0;
+      background-image: url(../img/icon-flag.svg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contacts__list tbody {
+    display: flex;
+  }
+
+  .contacts__line {
+    width: 46%;
+  }
+
+  .contacts__button {
+    margin: 0 auto;
+    font-size: 17px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts::before {
+    display: none;
+  }
+
+  .contacts__list {
+    padding-bottom: 0;
+  }
+
+  .contacts__list tbody {
+    flex-direction: column;
+  }
+
+  .contacts__wrapper {
+    min-width: 1050px;
+    flex-direction: column;
+  }
+
+  .contacts__button {
+    display: block;
+    width: 160px;
+    margin: 0;
+  }
+
+  .contacts__headline,
+  .contacts__list {
+    width: 350px;
+  }
 }

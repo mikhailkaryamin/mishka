@@ -7,7 +7,6 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -169,11 +168,10 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <b class="contacts__title">Контакты</b>
+        <h2 class="contacts__headline">Контакты</h2>
         <table class="contacts__list">
-          <tr>
+          <tr class="contacts__line">
             <td class="contacts__field">
               e-mail:
             </td>
@@ -183,7 +181,7 @@
               </a>
             </td>
           </tr>
-          <tr>
+          <tr class="contacts__line">
             <td class="contacts__field">
               адрес:
             </td>
@@ -192,14 +190,8 @@
             </td>
           </tr>
         </table>
+        <a href="#" class="contacts__button button-link">Напиши нам</a>
       </div>
-    </section>
-    <section class="map">
-      <h2 class="visually-hidden">Карта</h2>
-    </section>
-    <section class="write-us">
-      <h2 class="visually-hidden">Напиши нам</h2>
-      <a href="#" class="write-us__button button-link">Напиши нам</a>
     </section>
   </main>
   <footer class="page-footer">
