@@ -7,7 +7,7 @@
 }
 
 .cute-stuff__item--wrapper {
-  min-width: 260px;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,20 +31,20 @@
   padding-top: 153px;
   padding-left: 0;
   position: relative;
-}
 
-.cute-stuff__list::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: -100px;
-  left: calc(50% - 160px);
-  height: 253px;
-  min-width: 260px;
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: -135px -46px;
-  z-index: 1;
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: calc(50% - 160px);
+    height: 253px;
+    min-width: 260px;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -135px -46px;
+    z-index: 1;
+  }
 }
 
 .cute-stuff__item {
@@ -58,11 +58,35 @@
 }
 
 .cute-stuff__item--light {
+  position: relative;
   background-color: #63d1bb;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 62px;
+    right: 35px;
+    background-image: url(../img/icon-interior.svg);
+    opacity: 0.5;
+  }
 }
 
 .cute-stuff__item--dark {
+  position: relative;
   background-color: #56c3b2;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    right: 25px;
+    background-image: url(../img/icon-toy.svg);
+    opacity: 0.5;
+  }
 }
 
 .cute-stuff__item a {

@@ -1,9 +1,33 @@
-.contacts-form__legend {
-  font-size: 17px;
-  line-height: 16px;
-  color: #63d1bb;
-  text-transform: uppercase;
-  font-weight: 700;
+.contacts-form,
+.form-tel,
+.form-email,
+.form-add {
+  position: relative;
+  min-width: 260px;
+  border: none;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: calc(100% - 124px);
+    height: 1px;
+    left: 94px;
+    top: 8px;
+    background-color: #63d1bb;
+  }
+}
+
+.contacts-form {
+  margin-bottom: 20px;
+}
+
+.contacts-form__list {
+  margin: 0;
+  padding: 0;
 }
 
 .contacts-form__option {
@@ -12,4 +36,108 @@
   list-style: none;
   color: #000000;
   font-weight: 700;
+  padding: 0;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-form__legend {
+  margin-bottom: 30px;
+}
+
+.contacts-form__option--green {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: calc(100% - 62px);
+    height: 1px;
+    left: 62px;
+    top: 8px;
+    background-color: #63d1bb;
+  }
+}
+
+.contacts-form__legend,
+.form-tel__legend,
+.form-email__legend,
+.form-add__legend {
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contacts-form__input,
+.form-tel__input,
+.form-email__input {
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border: none;
+  border-bottom: 2px solid #444444;
+}
+
+.form-add__textarea {
+  width: calc(100% - 14px);
+  min-height: 128px;
+  border: 2px solid #444444;
+  margin-top: 17px;
+  padding: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-form,
+  .form-tel,
+  .form-email,
+  .form-add {
+    position: relative;
+    min-width: 668px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .form-tel,
+  .form-email,
+  .form-tel__input,
+  .form-email__input {
+    background-color: #f1f1f1;
+  }
+
+  .contacts-form__legend {
+    position: absolute;
+    top: 53px;
+    left: 50px;
+  }
+
+  .form-tel__input,
+  .form-email__input,
+  .form-add__textarea {
+    width: 75%;
+    margin-left: 25%;
+  }
+
+  .form-email {
+    padding-bottom: 49px;
+  }
+
+  .contacts-form__list{
+    padding-left: 25%;
+  }
+
 }

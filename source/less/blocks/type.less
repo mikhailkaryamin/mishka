@@ -1,3 +1,27 @@
+.type {
+  position: relative;
+  min-width: 260px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: calc(100% - 124px);
+    height: 1px;
+    left: 94px;
+    top: 8px;
+    background-color: #63d1bb;
+  }
+}
+
+.type__list {
+  padding: 0;
+}
+
 .type__legend {
   font-size: 17px;
   line-height: 16px;
@@ -7,9 +31,54 @@
 }
 
 .type__option {
+  position: relative;
+  display: block;
+  min-height: 55px;
   font-size: 17px;
   line-height: 18px;
   list-style: none;
   color: #000000;
   font-weight: 700;
+  padding-left: 63px;
+  padding-top: 5px;
+}
+
+.type__option input[type="radio"] + label::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 42px;
+  height: 42px;
+  left: 0;
+  top: -3px;
+  vertical-align: top;
+  background-image: url(../img/icon-radio-sprite.png);
+  background-repeat: no-repeat;
+}
+
+.type__option input[type="radio"]:checked + label::before {
+  background-position: -74px 0;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .type {
+    position: relative;
+    min-width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    &::before {
+      display: none;
+    }
+  }
+
+  .type__legend {
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+
+  .type__list {
+    padding-left: 25%;
+  }
 }
