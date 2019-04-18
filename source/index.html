@@ -11,7 +11,7 @@
 
 <body>
   <header class="page-header">
-    <div class="header__wrapper">
+    <div class="page-header__wrapper">
       <nav class="main-nav main-nav--closed main-nav--nojscript">
         <a class="main-nav__logo">
           <picture>
@@ -25,7 +25,7 @@
             Открыть меню
           </span>
         </button>
-        <ul class="main-nav__list site-list">
+        <ul class="site-list">
           <li class="site-list__item site-list__item--catalog">
             <a href="catalog.html">Каталог товаров</a>
           </li>
@@ -39,7 +39,7 @@
             <a href="#">Распродажа</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
+        <ul class="user-list">
           <li class="user-list__item">
             <a class="user-list__item--search" href="#">
               <span class="user-list__item--invis">
@@ -78,10 +78,10 @@
         <b class="knitted-baskets__top-product">
           товар недели
         </b>
-        <p class="knitted-baskets__description knitted-baskets--half">
+        <p class="knitted-baskets__description knitted-baskets__description--half">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
-        <table class="knitted-baskets__list knitted-baskets--half">
+        <table class="knitted-baskets__list knitted-baskets__list--half">
           <tr>
             <td class="knitted-baskets__field">
               Цвет:
@@ -113,8 +113,8 @@
           <img class="knitted-baskets__image-product" src="img/triple-set-mobile@1x.jpg" width="260" height="315"
             alt="Экологически чистая пряжа">
         </picture>
-        <b class="knitted-baskets__price knitted-baskets--half">Цена: 990 руб.</b>
-        <button class="knitted-baskets__order knitted-baskets--half" type="button">Заказать</button>
+        <b class="knitted-baskets__price knitted-baskets__price--half">Цена: 990 руб.</b>
+        <button class="knitted-baskets__order knitted-baskets__order--half" type="button">Заказать</button>
       </div>
     </section>
     <section class="about-us">
@@ -196,6 +196,8 @@
         </table>
         <a href="#" class="contacts__button button-link">Напиши нам</a>
       </div>
+      <div id="contacts__map">
+      </div>
     </section>
   </main>
   <footer class="page-footer">
@@ -274,9 +276,9 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="button-link copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="page-footer__copyright">
+        <b class="page-footer__copyright--text">Разработано</b>
+        <a class="button-link page-footer__copyright--link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
             enable-background="new 0 0 26.943 34.09" xml:space="preserve">
@@ -288,6 +290,10 @@
       </div>
     </div>
   </footer>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPi1j9n8HqbNXdOyv-jaLoVV_j_8BPxG4&callback=initMap"
+    type="text/javascript">
+  </script>
   <script src="js/script.js"></script>
 </body>
 

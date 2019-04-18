@@ -16,3 +16,11 @@ navToggle.addEventListener('click', function() {
     navToggle.classList.remove('main-nav__toggle--closed');
   }
 });
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('contacts__map'), {
+    center: {lat: 59.938730, lng: 30.323095},
+    zoom: 8
+  });
+}

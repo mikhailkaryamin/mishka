@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--inner">
     <div class="header__wrapper">
       <nav class="main-nav">
         <a href="index.html" class="main-nav__logo">
@@ -124,18 +124,18 @@
           <ul class="contacts-form__list">
             <legend class="contacts-form__legend">ФИО</legend>
             <li class="contacts-form__option">
-              <label for="name">Имя:</label>
-              <input class="contacts-form__input" id="name" type="text" name="name" placeholder="Введите ваше имя*"
+              <label class="contacts-form__option--label" for="name">Имя:</label>
+              <input class="contacts-form__input contacts-form__input--name" id="name" type="text" name="name" placeholder="Введите ваше имя*"
                 required />
             </li>
             <li class="contacts-form__option">
-              <label for="surname">Фамилия:</label>
-              <input class="contacts-form__input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*"
+              <label class="contacts-form__option--label" for="surname">Фамилия:</label>
+              <input class="contacts-form__input contacts-form__input--surname" id="surname" type="text" name="surname" placeholder="Укажите фамилию*"
                 required />
             </li>
             <li class="contacts-form__option">
-              <label for="mname">Отчество:</label>
-              <input class="contacts-form__input" id="mname" type="text" name="mname"
+              <label class="contacts-form__option--label" for="mname">Отчество:</label>
+              <input class="contacts-form__input contacts-form__input--mname" id="mname" type="text" name="mname"
                 placeholder="Отчество, если желаете" required />
             </li>
           </ul>
@@ -158,7 +158,9 @@
         <small class="form__small-text">
           <sup>*</sup>Поля обязательны для заполнения
         </small>
-        <button class="form-button" type="submit">Отправить заказ</button>
+        <div class="form__wrapper">
+        <button class="form__button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </section>
   </main>
