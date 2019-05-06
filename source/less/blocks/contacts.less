@@ -60,6 +60,7 @@
 @media (min-width: @tablet-width) {
   .contacts {
   padding-top: 19px;
+  margin-bottom: 0;
 
     &::before {
       background-image: url("../img/map-tablet@1x.jpg");
@@ -72,12 +73,14 @@
     flex-wrap: wrap;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 0;
   }
   .contacts__headline {
     position: relative;
     width: 100%;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 46px;
 
     &::before {
       display: block;
@@ -94,6 +97,7 @@
 
   .contacts__list {
     width: 100%;
+    padding-bottom: 538px;
   }
 
   .contacts__list tbody {
@@ -102,14 +106,32 @@
 
   .contacts__line {
     width: 46%;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 15px;
+
+    &:nth-child(odd) {
+      margin-right: 24px;
+    }
+  }
+
+  .contacts__field,
+  .contacts__value {
+    padding-top: 0;
   }
 
   .contacts__button {
     margin: 0 auto;
     font-size: 17px;
-    padding-left: 35px;
-    padding-right: 35px;
+    margin-bottom: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
+
+  #contacts__map {
+    bottom: 160px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -122,8 +144,8 @@
     min-height: 485px;
     flex-direction: column;
     margin: 0 auto;
-    margin-bottom: 105px;
-    padding-top: 145px;
+    margin-bottom: 77px;
+    padding-top: 94px;
     padding-left: 175px;
 
     &::before {
@@ -140,15 +162,17 @@
   .contacts__headline {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 69px;
 
     &::before {
-      left: -90px;
+      top: -8px;
+      left: -62px;
     }
   }
 
   .contacts__list {
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 49px;
     padding-bottom: 0;
   }
 
@@ -156,18 +180,33 @@
     flex-direction: column;
   }
 
+  .contacts__line {
+    width: 100%;
+  }
+
+  .contacts__field {
+    width: 72px;
+  }
+
   .contacts__button {
     display: block;
-    width: 160px;
+    width: 125px;
     margin: 0;
+    margin-left: 50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .contacts__headline,
   .contacts__list {
     width: 350px;
+    padding-left: 45px;
   }
 
-  .contacts__line {
-    width: 100%;
+  #contacts__map {
+    width: 525px;
+    height: 457px;
+    bottom: 28px;
+    right: 50px;
   }
 }

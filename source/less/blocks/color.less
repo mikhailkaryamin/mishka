@@ -19,6 +19,7 @@
 }
 
 .color__list {
+  margin-bottom: 7px;
   padding: 0;
 }
 
@@ -28,12 +29,13 @@
   color: #63d1bb;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .color__option {
   position: relative;
   display: block;
-  min-height: 55px;
+  min-height: 56px;
   font-size: 17px;
   line-height: 18px;
   list-style: none;
@@ -52,12 +54,20 @@
   left: 0;
   top: -3px;
   vertical-align: top;
-  background-image: url(../img/icon-checkbox-sprite.png);
+  border: 2px solid #444444;
   background-repeat: no-repeat;
 }
 
+.color__option input[type="checkbox"]:active + label::before {
+  border: 2px solid #c7c7c7;
+}
+
+.color__option input[type="checkbox"]:hover + label::before {
+  border: 2px solid #62d1ba;
+}
+
 .color__option input[type="checkbox"]:checked + label::before {
-  background-position: -75px 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 53.8 53.8' enable-background='new 0 0 53.8 53.8' xml:space='preserve'%3E%3Cline fill='none' stroke='%23444444' stroke-width='2' stroke-miterlimit='10' x1='11.6' y1='26.3' x2='22.5' y2='36.9'/%3E%3Cline fill='none' stroke='%23444444' stroke-width='2' stroke-miterlimit='10' x1='42.8' y1='16.3' x2='22.1' y2='36.6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
 }
 
@@ -65,9 +75,10 @@
   .color {
     position: relative;
     min-width: 668px;
+    min-height: 270px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 65px;
+    margin-bottom: 47px;
     padding-top: 35px;
     padding-left: 50px;
     padding-right: 50px;
@@ -82,6 +93,7 @@
     position: absolute;
     top: 53px;
     left: 50px;
+    margin-top: 12px;
   }
 
   .color__list {
@@ -92,10 +104,20 @@
 
   .color__option {
     width: calc(37% - 63px);
+    font-size: 19px;
+    line-height: 18px;
+
+    &:nth-child(odd) {
+      margin-right: 90px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .color {
+    min-height: 195px;
+  }
+
   .color__list  {
     width: 875px;
     margin: 0 auto;
@@ -104,5 +126,22 @@
 
   .color__legend {
     left: calc(50% - 462px);
+  }
+
+  .color__option {
+    margin-right: 0px;
+  }
+
+  .color__option:nth-child(odd) {
+    margin-right: 40px;
+  }
+
+  .color__option {
+    width: calc(25% - 63px);
+    margin-right: 40px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }

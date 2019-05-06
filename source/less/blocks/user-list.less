@@ -56,9 +56,9 @@
     flex-direction: row;
     margin-left: auto;
     order: -1;
-    margin-left: 0;
+    margin-left: auto;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 9px;
   }
 
   .user-list__item {
@@ -96,11 +96,14 @@
 
 @media (min-width: @desktop-width) {
   .user-list {
-    width: 350px;
     order: 3;
   }
 
   .user-list__item {
-    height: 48px;
+    height: 67px;
+
+    &--search {
+      width: 80px;
+    }
   }
 }

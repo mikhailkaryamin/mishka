@@ -38,18 +38,25 @@
 }
 
 @media (min-width: @desktop-width) {
-  .site-list__item--new-arrivals,
-  .site-list__item--sale {
-    display: block;
-  }
-
   .site-list {
-    width: 400px;
-    order: 1;
+    width: 420px;
     flex-wrap: wrap;
+    font-size: 17px;
+    order: 1;
   }
 
   .site-list__item {
-    width: 200px;
+    width: 220px;
+    padding-top: 27px;
+
+    &:nth-child(even) {
+      width: 200px;
+    }
+  }
+
+  .site-list__item--new-arrivals,
+  .site-list__item--sale {
+    display: block;
+    font-size: 15px;
   }
 }
