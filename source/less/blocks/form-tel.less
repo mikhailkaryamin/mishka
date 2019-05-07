@@ -2,7 +2,7 @@
   position: relative;
   min-width: 260px;
   border: none;
-  margin-bottom: 0;
+  margin-bottom: 33px;
   padding: 0;
   padding-left: 30px;
   padding-right: 30px;
@@ -16,6 +16,18 @@
     left: 94px;
     top: 8px;
     background-color: #63d1bb;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 25px;
+    height: 24px;
+    top: 35px;
+    right: 41px;
+    background-image: url(../img/icon-phone.svg);
+    opacity: 0.2;
   }
 }
 
@@ -41,6 +53,7 @@
   .form-tel {
     position: relative;
     min-width: 668px;
+    margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     padding-top: 47px;
@@ -50,6 +63,11 @@
     &::before {
       display: none;
     }
+
+    &::after {
+      top: 58px;
+      right: 77px;
+    }
   }
 
   .form-tel,
@@ -58,7 +76,7 @@
   }
 
   .form-tel__input{
-    width: 75%;
+    width: 73%;
     font-size: 19px;
     line-height: 18px;
     margin-left: 25%;
@@ -75,11 +93,15 @@
 @media (min-width: @desktop-width) {
   .form-tel {
     padding-left: 50px;
+
+    &::after {
+      right: calc(50% - 342px);
+    }
   }
 
   .form-tel__input {
     display: block;
-    width: 700px;
+    width: 685px;
     margin: 0 auto;
 
   }

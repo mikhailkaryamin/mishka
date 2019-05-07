@@ -10,12 +10,24 @@
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     width: calc(100% - 124px);
     height: 1px;
     left: 94px;
     top: 8px;
     background-color: #63d1bb;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 32px;
+    height: 26px;
+    top: 35px;
+    right: 37px;
+    background-image: url(../img/icon-mail.svg);
+    opacity: 0.2;
   }
 }
 
@@ -50,6 +62,10 @@
     &::before {
       display: none;
     }
+
+    &::after {
+      right: 72px;
+    }
   }
 
   .form-email,
@@ -58,7 +74,7 @@
   }
 
   .form-email__input {
-    width: 75%;
+    width: 73%;
     font-size: 19px;
     line-height: 18px;
     margin-left: 25%;
@@ -80,11 +96,15 @@
   .form-email {
     margin-bottom: 50px;
     padding-left: 50px;
+
+    &::after {
+      right: calc(50% - 345px);
+    }
   }
 
   .form-email__input {
     display: block;
-    width: 700px;
+    width: 685px;
     margin: 0 auto;
   }
 

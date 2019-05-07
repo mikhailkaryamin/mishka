@@ -30,6 +30,8 @@
 
 .form__small-text {
   min-width: 260px;
+  font-size: 14px;
+  line-height: 16px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -40,7 +42,7 @@
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 28px;
+  margin-top: 32px;
   margin-left: 30px;
   margin-right: 30px;
   padding-top: 15px;
@@ -50,6 +52,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form__order {
+    margin-bottom: 58px;
+  }
+
   .form__headline {
     position: relative;
     font-size: 43px;
@@ -90,28 +96,25 @@
 
   .form__small-text {
     display: inline-block;
+    font-size: 17px;
+    line-height: 30px;
     text-align: right;
-    margin-top: -35px;
+    margin-top: -46px;
     order: 50;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form__headline {
-    font-size: 53px;
-    line-height: 57px;
-    margin-bottom: 150px;
-  }
-
-  .form__small-text {
-    width: 700px;
-    margin: 0 auto;
-    margin-top: -33px;
-  }
-
   .form__wrapper {
     width: 1050px;
     margin: 0 auto;
+  }
+
+  .form__headline {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 123px;
+    padding-bottom: 97px;
   }
 
   .form__text {
@@ -128,5 +131,11 @@
 
   .form__button {
     margin-left: 175px;
+  }
+
+  .form__small-text {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: -47px;
   }
 }
