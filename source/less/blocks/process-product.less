@@ -2,29 +2,29 @@
   display: flex;
   flex-direction: column;
   min-width: 258px;
-  margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 58px;
+  margin-left: 30px;
   border: 1px solid #ededed;
 }
 
 .process-product__headline {
   position: relative;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
   margin-top: 22px;
   margin-bottom: 20px;
   padding-left: 90px;
+  color: #000000;
+  font-size: 17px;
+  line-height: 24px;
 
   &::before {
-    display: block;
-    position: absolute;
     content: "";
-    width: 32px;
-    height: 27px;
+    position: absolute;
     top: 0;
     left: 35px;
+    display: block;
+    width: 32px;
+    height: 27px;
     background-image: url("../img/icon-video.svg");
   }
 }
@@ -35,42 +35,42 @@
 }
 
 .process-product__text {
-  font-size: 13px;
-  line-height: 24px;
   margin-top: 27px;
   margin-bottom: 50px;
   padding-left: 35px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .process-product__order {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  margin-left: 34px;
   margin-right: 34px;
   margin-bottom: 32px;
+  margin-left: 34px;
   padding-top: 16px;
   padding-bottom: 16px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
   border: 2px solid #444444;
   background-color: #ffffff;
 }
 
-@media(min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .process-product__wrapper {
     min-width: 668px;
-    margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 74px;
+    margin-left: 50px;
     border: none;
   }
 
   .process-product__headline {
-    font-size: 20px;
-    line-height: 24px;
     margin-top: 35px;
     padding-left: 104px;
+    font-size: 20px;
+    line-height: 24px;
 
     &::before {
       top: -2px;
@@ -83,22 +83,23 @@
   }
 
   .process-product__text {
-    font-size: 15px;
-    line-height: 30px;
     margin-top: 12px;
     margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .process-product__order {
-    margin-left: 41px;
     margin-right: 41px;
+    margin-left: 41px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .process-product__wrapper {
+    flex-wrap: wrap;
     width: 1050px;
     height: 455px;
-    flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 105px;
     border: 1px solid #ededed;
@@ -116,18 +117,18 @@
   }
 
   .process-product__video {
-    width: 680px;
     order: -1;
+    width: 680px;
   }
 
   .process-product__text {
     width: 275px;
-    padding-left: 68px;
     margin-bottom: 48px;
+    padding-left: 68px;
   }
 
   .process-product__order {
-    margin-left: 68px;
     margin-right: 58px;
+    margin-left: 68px;
   }
 }

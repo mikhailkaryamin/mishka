@@ -1,19 +1,20 @@
 .type {
   position: relative;
   min-width: 260px;
-  border: none;
   margin: 0;
   padding: 0;
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
+  border: none;
+
   &::before {
+    content: "";
     position: absolute;
+    top: 8px;
+    left: 94px;
     display: block;
-    content: '';
     width: calc(100% - 124px);
     height: 1px;
-    left: 94px;
-    top: 8px;
     background-color: #63d1bb;
   }
 }
@@ -24,35 +25,35 @@
 }
 
 .type__legend {
-  font-size: 17px;
-  line-height: 16px;
-  color: #63d1bb;
-  text-transform: uppercase;
-  font-weight: 700;
   margin-bottom: 12px;
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
 .type__option {
   position: relative;
   display: block;
   min-height: 55px;
+  padding-top: 5px;
+  padding-left: 63px;
+  color: #000000;
   font-size: 17px;
+  font-weight: 700;
   line-height: 18px;
   list-style: none;
-  color: #000000;
-  font-weight: 700;
-  padding-left: 63px;
-  padding-top: 5px;
 }
 
 .type__checkbox {
   position: absolute;
   width: 2em;
   height: 2em;
-  box-shadow: 0 0 0 0.1em #444444;
   margin-top: -0.3em;
   margin-left: -3.5em;
   border-radius: 50%;
+  box-shadow: 0 0 0 0.1em #444444;
 }
 
 .type__input:checked + .type__checkbox {
@@ -68,13 +69,14 @@
   box-shadow: 0 0 0 0.1em #c7c7c7;
 }
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .type {
     position: relative;
     min-width: 668px;
     margin-bottom: 19px;
-    padding-left: 50px;
     padding-right: 50px;
+    padding-left: 50px;
+
     &::before {
       display: none;
     }
@@ -92,10 +94,10 @@
   }
 
   .type__option {
-    font-size: 19px;
-    line-height: 18px;
     margin-bottom: 15px;
     padding-left: 80px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .type__checkbox {
@@ -107,17 +109,17 @@
 }
 
 @media (min-width: @desktop-width) {
-  .type__list  {
+  .type__list {
     width: 875px;
-    font-size: 19px;
-    line-height: 18px;
     margin: 0 auto;
     padding-left: 175px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .type__legend {
-    left: calc(50% - 462px);
     top: -16px;
+    left: calc(50% - 462px);
   }
 
   .type__option {

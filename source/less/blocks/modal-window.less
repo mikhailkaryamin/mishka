@@ -1,0 +1,144 @@
+.modal-window__title {
+  width: 160px;
+  margin: 0 auto;
+  padding-top: 31px;
+  padding-bottom: 11px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-window__description {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.modal-window__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.modal-window__button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 18px;
+  padding-right: 10px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #63d1bb;
+  cursor: pointer;
+}
+
+.modal-window {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  z-index: 100;
+  display: flex;
+  width: 320px;
+  margin: 0 auto;
+  margin-left: -160px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.modal-window__option {
+  position: relative;
+  display: flex;
+  width: 78px;
+  height: 48px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal-window__checkbox ~ span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 76px;
+  height: 48px;
+  border: 2px solid #ececec;
+}
+
+.modal-window__checkbox:hover ~ span::before {
+  border: 2px solid #c7c7c7;
+}
+
+.modal-window__checkbox:checked ~ span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 76px;
+  height: 48px;
+  border: 2px solid #62d1ba;
+}
+
+.modal-window__value {
+  padding: 19px 35px 12px 34px;
+}
+
+.modal-window__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding-bottom: 46px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-window {
+    width: 568px;
+    margin-left: -284px;
+  }
+
+  .modal-window__wrapper {
+    width: 354px;
+  }
+
+  .modal-window__title {
+    width: auto;
+    padding-top: 35px;
+    font-size: 30px;
+    line-height: 57px;
+    text-align: left;
+  }
+
+  .modal-window__description {
+    font-size: 17px;
+  }
+
+  .modal-window__option {
+    width: 114px;
+  }
+
+  .modal-window__checkbox ~ span::before {
+    width: 110px;
+  }
+
+  .modal-window__checkbox:checked ~ span::after {
+    width: 110px;
+  }
+
+  .modal-window__value {
+    padding: 18px 49px 14px 51px;
+  }
+}

@@ -1,50 +1,50 @@
 .form-email {
   position: relative;
   min-width: 260px;
-  border: none;
   margin-bottom: 35px;
   padding: 0;
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
+  border: none;
 
   &::before {
-    position: absolute;
-    display: block;
     content: "";
+    position: absolute;
+    top: 8px;
+    left: 94px;
+    display: block;
     width: calc(100% - 124px);
     height: 1px;
-    left: 94px;
-    top: 8px;
     background-color: #63d1bb;
   }
 
   &::after {
-    position: absolute;
-    display: block;
     content: "";
-    width: 32px;
-    height: 26px;
+    position: absolute;
     top: 35px;
     right: 37px;
-    background-image: url(../img/icon-mail.svg);
+    display: block;
+    width: 32px;
+    height: 26px;
+    background-image: url("../img/icon-mail.svg");
     opacity: 0.2;
   }
 }
 
 .form-email__legend {
-  font-size: 17px;
-  line-height: 16px;
   color: #63d1bb;
-  text-transform: uppercase;
+  font-size: 17px;
   font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
 .form-email__input {
   width: 100%;
-  font-size: 17px;
-  line-height: 18px;
   padding-top: 17px;
   padding-bottom: 17px;
+  font-size: 17px;
+  line-height: 18px;
   border: none;
   border-bottom: 2px solid #444444;
 }
@@ -53,11 +53,12 @@
   .form-email {
     position: relative;
     min-width: 668px;
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
     padding-top: 20px;
-    padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 49px;
+    padding-left: 50px;
 
     &::before {
       display: none;
@@ -75,20 +76,16 @@
 
   .form-email__input {
     width: 73%;
-    font-size: 19px;
-    line-height: 18px;
     margin-left: 25%;
     padding-left: 16px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .form-email__legend {
     position: absolute;
     top: 40px;
     left: 50px;
-  }
-
-  .form-email {
-    padding-bottom: 49px;
   }
 }
 
@@ -112,5 +109,3 @@
     left: calc(50% - 462px);
   }
 }
-
-

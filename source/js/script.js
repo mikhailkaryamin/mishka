@@ -1,27 +1,36 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-
-navMain.classList.remove('main-nav--nojscript');
-
+navMain.classList.remove('main-nav--nojs');
 navToggle.addEventListener('click', function() {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
     navMain.classList.add('main-nav--opened');
-    navToggle.classList.remove('main-nav__toggle--opened');
-    navToggle.classList.add('main-nav__toggle--closed');
   } else {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
-    navToggle.classList.add('main-nav__toggle--opened');
-    navToggle.classList.remove('main-nav__toggle--closed');
   }
 });
 
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('contacts__map'), {
-    center: {lat: 59.938730, lng: 30.323095},
-    zoom: 15
+var modalWindow = document.querySelectorAll('.modal-js');
+var popupSize = document.querySelector('.modal');
+
+function modalOpen(modal) {
+  modal.addEventListener('click', function(evt){
+    evt.preventDefault();
+    popupSize.classList.add('modal--show');
   });
 }
+
+modalWindow.forEach(function(modal){
+  modalOpen(modal);
+});
+
+window.addEventListener('keydown', function(evt){
+  if(evt.keyCode === 27) {
+    evt.preventDefault();
+    if(popupSize.classList.contains('modal--show')){
+      popupSize.classList.remove('modal--show');
+    }
+  }
+});
 
