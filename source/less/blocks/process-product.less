@@ -1,11 +1,21 @@
 .process-product__wrapper {
   display: flex;
   flex-direction: column;
+  height: 100%;
   min-width: 258px;
   margin-right: 30px;
   margin-bottom: 58px;
   margin-left: 30px;
   border: 1px solid #ededed;
+
+  &:hover,
+  &:focus {
+    .background-shadow--hover();
+  }
+
+  &:active {
+    .background-shadow--active();
+  }
 }
 
 .process-product__headline {
@@ -29,25 +39,65 @@
   }
 }
 
-.process-product__video,
-.process-product__video--image {
+.process-product__video {
+  position: relative;
   width: 100%;
+}
+
+.process-product__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.process-product__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 101px;
+  height: 77px;
+  margin-top: -39px;
+  margin-left: -50px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.process-product__description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 0;
 }
 
 .process-product__text {
   margin-top: 27px;
   margin-bottom: 50px;
+  padding-right: 20px;
   padding-left: 35px;
   font-size: 13px;
   line-height: 24px;
 }
 
 .process-product__order {
-  margin-right: 34px;
+  margin-right: 33px;
   margin-bottom: 32px;
-  margin-left: 34px;
+  margin-left: 33px;
   padding-top: 16px;
   padding-bottom: 16px;
+  color: #000000;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
@@ -63,7 +113,6 @@
     margin-right: 50px;
     margin-bottom: 74px;
     margin-left: 50px;
-    border: none;
   }
 
   .process-product__headline {
@@ -102,33 +151,41 @@
     height: 455px;
     margin: 0 auto;
     margin-bottom: 105px;
-    border: 1px solid #ededed;
+    word-wrap: break-word;
   }
 
   .process-product__headline {
-    width: 200px;
+    width: 369px;
+    max-height: 140px;
     padding-top: 60px;
-    padding-left: 68px;
+    padding-right: 100px;
+    padding-left: 80px;
 
     &::before {
       top: 7px;
-      left: 68px;
+      left: 80px;
     }
   }
 
   .process-product__video {
+    flex: none;
     order: -1;
     width: 680px;
   }
 
+  .process-product__description {
+    width: 369px;
+  }
+
   .process-product__text {
-    width: 275px;
     margin-bottom: 35px;
-    padding-left: 68px;
+    padding-left: 80px;
+    overflow: auto;
   }
 
   .process-product__order {
+    width: 230px;
     margin-right: 58px;
-    margin-left: 68px;
+    margin-left: 80px;
   }
 }

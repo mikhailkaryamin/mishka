@@ -68,15 +68,19 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <div class="catalog__product">
-              <picture class="catalog__picture">
-                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
-                <img class="catalog__image-product catalog__image-product--rabbit" src="img/photo-hare-mobile@1x.jpg"
-                  alt="Зайчик-попрыгайчик">
-              </picture>
+              <a href="#">
+                <picture class="catalog__picture">
+                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+                  <img class="catalog__image-product catalog__image-product--rabbit" src="img/photo-hare-mobile@1x.jpg"
+                    alt="Зайчик-попрыгайчик">
+                </picture>
+              </a>
               <p class="catalog__text">
-                <b class="catalog__name">Зайчик-попрыгайчик</b>
-                Рост 30 см, вес 200 г
+                <a href="#">
+                  <b class="catalog__name">Зайчик-попрыгайчик</b>
+                  Рост 30 см, вес 200 г
+                </a>
                 <span class="catalog__price">
                   <b>1 200 руб.</b>
                   <a href="#" class="modal-js">
@@ -90,15 +94,19 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__product">
-              <picture class="catalog__picture">
-                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
-                <img class="catalog__image-product catalog__image-product--basket" src="img/photo-bowl-mobile@1x.jpg"
-                  alt="Корзинка для белья">
-              </picture>
+              <a href="#">
+                <picture class="catalog__picture">
+                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+                  <img class="catalog__image-product catalog__image-product--basket" src="img/photo-bowl-mobile@1x.jpg"
+                    alt="Корзинка для белья">
+                </picture>
+              </a>
               <p class="catalog__text">
-                <b class="catalog__name">Корзинка для белья</b>
-                Диаметр 15 см, высота 10 см
+                <a href="#">
+                  <b class="catalog__name">Корзинка для белья</b>
+                  Диаметр 15 см, высота 10 см
+                </a>
                 <span class="catalog__price">
                   <b>690 руб.</b>
                   <a href="#" class="modal-js">
@@ -112,15 +120,19 @@
           </li>
           <li class="catalog__item">
             <div class="catalog__product">
-              <picture class="catalog__picture">
-                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
-                <img class="catalog__image-product catalog__image-product--big-basket"
-                  src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
-              </picture>
+              <a href="#">
+                <picture class="catalog__picture">
+                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+                  <img class="catalog__image-product catalog__image-product--big-basket"
+                    src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+                </picture>
+              </a>
               <p class="catalog__text">
-                <b class="catalog__name">Большая корзинка для игрушек</b>
-                Диаметр 30 см, высота 30 см
+                <a href="#">
+                  <b class="catalog__name">Большая корзинка для игрушек</b>
+                  Диаметр 30 см, высота 30 см
+                </a>
                 <span class="catalog__price">
                   <b>1 500 руб.</b>
                   <a href="#" class="modal-js">
@@ -138,15 +150,20 @@
     <section class="process-product">
       <div class="process-product__wrapper">
         <h2 class="process-product__headline">Процесс производства</h2>
-        <picture class="process-product__video">
-          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-          <img class="process-product__video--image" src="img/video-mobile@1x.jpg" alt="Большая корзинка для игрушек">
-        </picture>
-        <p class="process-product__text">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a href="#" class="process-product__order button">Сделать заказ</a>
+        <div class="process-product__video">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+            <img class="process-product__image" src="img/video-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+          </picture>
+          <button class="process-product__button" type="button"></button>
+        </div>
+        <div class="process-product__description">
+          <p class="process-product__text">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a href="#" class="process-product__order button">Сделать заказ</a>
+        </div>
       </div>
     </section>
   </main>

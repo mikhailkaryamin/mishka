@@ -31,6 +31,8 @@
   position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   border: none;
 
   &::before {
@@ -42,6 +44,21 @@
     width: calc(100% - 64px);
     height: 1px;
     background-color: #63d1bb;
+  }
+
+  &--email::before {
+    left: 81px;
+    width: calc(100% - 81px);
+  }
+
+  &--tel,
+  &--email {
+    margin-bottom: 25px;
+    padding-top: 8px;
+  }
+
+  &--add {
+    padding-top: 25px;
   }
 }
 
@@ -55,8 +72,6 @@
 
 .form__fieldset-list {
   margin: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -64,6 +79,7 @@
   position: relative;
   display: block;
   min-height: 55px;
+  margin-bottom: 5px;
   padding-top: 5px;
   padding-left: 63px;
   color: #000000;
@@ -73,6 +89,8 @@
   list-style: none;
 
   &--contacts {
+    margin-bottom: 25px;
+    padding-top: 0;
     padding-left: 0;
   }
 }
@@ -100,7 +118,7 @@
 .form__input {
   width: 100%;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 16px;
   font-size: 17px;
   line-height: 18px;
   border: none;
@@ -128,7 +146,7 @@
   content: "";
   position: absolute;
   top: 35px;
-  right: 0;
+  right: 5px;
   display: block;
   opacity: 0.2;
 
@@ -145,12 +163,17 @@
 
 .form__textarea {
   width: 100%;
-  min-height: 128px;
+  min-height: 140px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+  line-height: 18px;
   border: 2px solid #444444;
 }
 
 .form__text {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
 }
