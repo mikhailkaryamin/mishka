@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Мишка-каталог</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -70,10 +72,17 @@
             <div class="catalog__product">
               <a href="#">
                 <picture class="catalog__picture">
-                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)"
+                    srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                   <img class="catalog__image-product catalog__image-product--rabbit" src="img/photo-hare-mobile@1x.jpg"
-                    alt="Зайчик-попрыгайчик">
+                    alt="Зайчик-попрыгайчик" srcset="img/photo-hare-mobile@2x.jpg 2x">
                 </picture>
               </a>
               <p class="catalog__text">
@@ -96,10 +105,17 @@
             <div class="catalog__product">
               <a href="#">
                 <picture class="catalog__picture">
-                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)"
+                    srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                   <img class="catalog__image-product catalog__image-product--basket" src="img/photo-bowl-mobile@1x.jpg"
-                    alt="Корзинка для белья">
+                    alt="Корзинка для белья" srcset="img/photo-bowl-mobile@2x.jpg 2x">
                 </picture>
               </a>
               <p class="catalog__text">
@@ -122,10 +138,18 @@
             <div class="catalog__product">
               <a href="#">
                 <picture class="catalog__picture">
-                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)"
+                    srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
                   <img class="catalog__image-product catalog__image-product--big-basket"
-                    src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+                    src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"
+                    srcset="img/photo-toys-mobile@2x.jpg 2x">
                 </picture>
               </a>
               <p class="catalog__text">
@@ -152,9 +176,15 @@
         <h2 class="process-product__headline">Процесс производства</h2>
         <div class="process-product__video">
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-            <img class="process-product__image" src="img/video-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="process-product__image" src="img/video-mobile@1x.jpg" alt="Процесс производства"
+              srcset="img/video-mobile@2x.jpg 2x">
           </picture>
           <button class="process-product__button" type="button"></button>
         </div>
@@ -240,6 +270,7 @@
     </section>
   </div>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

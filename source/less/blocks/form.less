@@ -5,20 +5,16 @@
 }
 
 .form__container {
-  min-width: 260px;
-  margin: 0;
-  padding: 0;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .form__headline {
   min-width: 260px;
   margin: 0;
-  margin-bottom: 27px;
   padding-top: 70px;
   padding-right: 30px;
-  padding-bottom: 70px;
+  padding-bottom: 75px;
   padding-left: 30px;
   color: #000000;
   font-size: 27px;
@@ -29,10 +25,10 @@
 
 .form__fieldset {
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
   border: none;
 
   &::before {
@@ -63,6 +59,7 @@
 }
 
 .form__legend {
+  margin-bottom: 15px;
   color: #63d1bb;
   font-size: 17px;
   font-weight: 700;
@@ -95,53 +92,6 @@
   }
 }
 
-.form__checkbox {
-  position: absolute;
-  box-shadow: 0 0 0 0.1em #444444;
-
-  &--type {
-    width: 2em;
-    height: 2em;
-    margin-top: -0.3em;
-    margin-left: -3.5em;
-    border-radius: 50%;
-  }
-
-  &--color {
-    width: 2.2em;
-    height: 2.2em;
-    margin-top: -0.5em;
-    margin-left: -3.7em;
-  }
-}
-
-.form__input {
-  width: 100%;
-  padding-top: 12px;
-  padding-bottom: 16px;
-  font-size: 17px;
-  line-height: 18px;
-  border: none;
-  border-bottom: 2px solid #000000;
-}
-
-.form__input--type:checked + .form__checkbox--type {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 53.8 53.8' enable-background='new 0 0 53.8 53.8' xml:space='preserve'%3E%3Ccircle id='Shape_1_copy_5' fill='%2362d1ba' fill-opacity='1' cx='26.9' cy='26.9' r='10.4'/%3E%3C/svg%3E");
-}
-
-.form__input--color:checked + .form__checkbox--color {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 53.8 53.8' enable-background='new 0 0 53.8 53.8' xml:space='preserve'%3E%3Cline fill='none' stroke='%23444444' stroke-width='2' stroke-miterlimit='10' x1='11.6' y1='26.3' x2='22.5' y2='36.9'/%3E%3Cline fill='none' stroke='%23444444' stroke-width='2' stroke-miterlimit='10' x1='42.8' y1='16.3' x2='22.1' y2='36.6'/%3E%3C/svg%3E");
-}
-
-.form__input:hover + .form__checkbox,
-.form__input:focus + .form__checkbox {
-  box-shadow: 0 0 0 0.1em #62d1ba;
-}
-
-.form__input:active + .form__checkbox {
-  box-shadow: 0 0 0 0.1em #c7c7c7;
-}
-
 .form__icon {
   content: "";
   position: absolute;
@@ -161,21 +111,15 @@
   }
 }
 
-.form__textarea {
-  width: 100%;
-  min-height: 140px;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
-  font-size: 17px;
-  line-height: 18px;
-  border: 2px solid #444444;
-}
-
 .form__text {
   margin-bottom: 25px;
   font-size: 13px;
   line-height: 24px;
+}
+
+.form__sup-button {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__small-text {
@@ -198,7 +142,6 @@
 
   .form__headline {
     position: relative;
-    margin-bottom: 80px;
     padding-top: 21px;
     font-size: 43px;
     line-height: 50px;
@@ -215,48 +158,34 @@
     }
   }
 
-  .form__background {
-    background-color: #f1f1f1;
-  }
-
   .form__container {
-    min-width: 668px;
     padding-top: 50px;
-    padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 50px;
+
+    &--gray {
+      background-color: #f1f1f1;
+    }
   }
 
   .form__fieldset {
     position: relative;
+    flex-direction: row;
 
     &::before {
       display: none;
     }
-
-    &--tel,
-    &--email,
-    &--add {
-      padding-left: 25%;
-    }
   }
 
   .form__legend {
-    position: absolute;
-    top: 15px;
-    left: 50px;
-    margin-top: 12px;
+    width: 25%;
+    min-width: 0;
   }
 
   .form__fieldset-list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 25%;
-
-    &--type {
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
+    max-width: 75%;
+    flex-grow: 1;
   }
 
   .form__option {
@@ -301,17 +230,11 @@
     line-height: 30px;
   }
 
-  .form__input--tel,
-  .form__input--mail {
-    background-color: #f1f1f1;
-  }
-
   .form__icon {
     top: 9px;
   }
 
   .form__sup-button {
-    display: flex;
     flex-direction: row-reverse;
   }
 
@@ -329,11 +252,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form__container {
-    width: 1050px;
-    margin: 0 auto;
-  }
-
   .form__headline {
     margin-bottom: 123px;
     padding-bottom: 97px;
@@ -348,6 +266,10 @@
     &:nth-child(odd) {
       margin-right: 26px;
     }
+  }
+
+  .form__fieldset-list--type {
+    flex-direction: column;
   }
 
   .form__text {
