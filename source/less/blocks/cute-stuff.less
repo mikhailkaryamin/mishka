@@ -7,6 +7,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  .container-mobile();
 
   @media (max-width: 767px) {
     min-width: 100%;
@@ -15,7 +16,7 @@
 }
 
 .cute-stuff__headline {
-  min-height: 286px;
+  min-height: 283px;
   margin: 0;
   padding-top: 70px;
   padding-right: 20px;
@@ -56,9 +57,9 @@
   display: flex;
   width: 100%;
   min-width: 260px;
-  padding-top: 27px;
+  padding-top: 25px;
   padding-right: 30px;
-  padding-bottom: 28px;
+  padding-bottom: 17px;
   padding-left: 30px;
   color: #ffffff;
 
@@ -107,18 +108,22 @@
 }
 
 @media (min-width: @tablet-width) {
-  .cute-stuff__container::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    display: block;
-    width: calc(100% - 100px);
-    height: 16px;
-    background-image: url("../img/bg-zigzag-fill.svg");
+  .cute-stuff__container {
+    .container-tablet();
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      display: block;
+      width: calc(100% - 100px);
+      height: 16px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+    }
   }
 
   .cute-stuff__headline {
-    min-height: 560px;
+    min-height: 566px;
     margin-top: 0;
     padding-top: 95px;
     padding-right: 80px;
@@ -126,7 +131,7 @@
     font-size: 43px;
     line-height: 50px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position-y: -70px;
+    background-position-y: -60px;
   }
 
   .cute-stuff__list {
@@ -140,19 +145,32 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  .cute-stuff__link {
+    padding-top: 28px;
+    padding-bottom: 29px;
+    padding-left: 35px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .cute-stuff {
     width: 100%;
-    margin-bottom: 60px;
+  }
+
+  .cute-stuff__container {
+    .container-desktop();
   }
 
   .cute-stuff__headline {
+    min-height: 581px;
     padding-top: 107px;
+    padding-right: 125px;
+    padding-left: 125px;
     font-size: 53px;
     line-height: 57px;
     background-image: url("../img/hero-desktop@1x.jpg");
+    background-position-y: -47px;
   }
 
   .cute-stuff__list {

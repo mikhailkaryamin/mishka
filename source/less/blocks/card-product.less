@@ -1,0 +1,136 @@
+.card-product {
+  border: 1px solid #ededed;
+
+  &:hover .card-product__container,
+  &:focus .card-product__container {
+    .background-shadow--hover();
+  }
+
+  &:active .card-product__container {
+    .background-shadow--active();
+  }
+}
+
+.card-product__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 375px;
+}
+
+.card-product__image-product {
+  width: 100%;
+  height: 100%;
+}
+
+.card-product__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.card-product__link-cart {
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+.card-product__name {
+  display: block;
+  width: 100%;
+  padding-bottom: 5px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card-product__price {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #000000;
+  font-size: 15px;
+  line-height: 24px;
+  border-top: 1px solid #ededed;
+}
+
+.card-product__price-icon {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 0;
+  display: block;
+  width: 21px;
+  height: 19px;
+  opacity: 0.2;
+
+  &:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card-product {
+    min-height: 333px;
+  }
+
+  .card-product__container {
+    flex-direction: row;
+  }
+
+  .card-product__link {
+    flex: 1;
+  }
+
+  .card-product__picture {
+    width: 50%;
+    min-height: 0;
+  }
+
+  .card-product__text {
+    width: 50%;
+    margin: 0;
+    padding-top: 27px;
+    font-size: 15px;
+  }
+
+  .card-product__name {
+    font-size: 20px;
+  }
+
+  .card-product__price {
+    padding-bottom: 32px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card-product {
+    width: 316px;
+    height: 658px;
+  }
+
+  .card-product__container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-product__picture {
+    width: 100%;
+  }
+
+  .card-product__text {
+    flex: 1;
+    width: 100%;
+  }
+}

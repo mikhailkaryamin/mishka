@@ -66,12 +66,12 @@
   <main class="catalog-page-main">
     <section class="catalog">
       <h1 class="catalog__headline">Каталог товаров</h1>
-      <div class="catalog__wrapper">
+      <div class="catalog__container">
         <ul class="catalog__list">
-          <li class="catalog__item">
-            <div class="catalog__product">
-              <a href="#">
-                <picture class="catalog__picture">
+          <li class="card-product catalog__item">
+            <div class="card-product__container">
+              <a class="card-product__link" href="#">
+                <picture class="card-product__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
                     srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -81,19 +81,20 @@
                     srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-                  <img class="catalog__image-product catalog__image-product--rabbit" src="img/photo-hare-mobile@1x.jpg"
-                    alt="Зайчик-попрыгайчик" srcset="img/photo-hare-mobile@2x.jpg 2x">
+                  <img class="card-product__image-product card-product__image-product--rabbit"
+                    src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик"
+                    srcset="img/photo-hare-mobile@2x.jpg 2x">
                 </picture>
               </a>
-              <p class="catalog__text">
-                <a href="#">
-                  <b class="catalog__name">Зайчик-попрыгайчик</b>
+              <p class="card-product__text">
+                <a class="card-product__link-cart" href="#">
+                  <b class="card-product__name">Зайчик-попрыгайчик</b>
                   Рост 30 см, вес 200 г
                 </a>
-                <span class="catalog__price">
+                <span class="card-product__price">
                   <b>1 200 руб.</b>
                   <a href="#" class="modal-js">
-                    <svg class="catalog__price-icon" width="20" height="19" focusable="false">
+                    <svg class="card-product__price-icon" width="20" height="19" focusable="false">
                       <use xlink:href="img/icon-cart.svg#icon-cart"></use>
                     </svg>
                   </a>
@@ -101,10 +102,10 @@
               </p>
             </div>
           </li>
-          <li class="catalog__item">
-            <div class="catalog__product">
-              <a href="#">
-                <picture class="catalog__picture">
+          <li class="card-product catalog__item">
+            <div class="card-product__container">
+              <a class="card-product__link" href="#">
+                <picture class="card-product__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
                     srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -114,19 +115,20 @@
                     srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-                  <img class="catalog__image-product catalog__image-product--basket" src="img/photo-bowl-mobile@1x.jpg"
-                    alt="Корзинка для белья" srcset="img/photo-bowl-mobile@2x.jpg 2x">
+                  <img class="card-product__image-product card-product__image-product--basket"
+                    src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья"
+                    srcset="img/photo-bowl-mobile@2x.jpg 2x">
                 </picture>
               </a>
-              <p class="catalog__text">
-                <a href="#">
-                  <b class="catalog__name">Корзинка для белья</b>
+              <p class="card-product__text">
+                <a class="card-product__link-cart" href="#">
+                  <b class="card-product__name">Корзинка для белья</b>
                   Диаметр 15 см, высота 10 см
                 </a>
-                <span class="catalog__price">
+                <span class="card-product__price">
                   <b>690 руб.</b>
                   <a href="#" class="modal-js">
-                    <svg class="catalog__price-icon" width="20" height="19" focusable="false">
+                    <svg class="card-product__price-icon" width="20" height="19" focusable="false">
                       <use xlink:href="img/icon-cart.svg#icon-cart"></use>
                     </svg>
                   </a>
@@ -134,10 +136,10 @@
               </p>
             </div>
           </li>
-          <li class="catalog__item">
-            <div class="catalog__product">
-              <a href="#">
-                <picture class="catalog__picture">
+          <li class="card-product catalog__item">
+            <div class="card-product__container">
+              <a class="card-product__link" href="#">
+                <picture class="card-product__picture">
                   <source type="image/webp" media="(min-width: 1150px)"
                     srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -147,20 +149,20 @@
                     srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-                  <img class="catalog__image-product catalog__image-product--big-basket"
+                  <img class="card-product__image-product card-product__image-product--big-basket"
                     src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек"
                     srcset="img/photo-toys-mobile@2x.jpg 2x">
                 </picture>
               </a>
-              <p class="catalog__text">
-                <a href="#">
-                  <b class="catalog__name">Большая корзинка для игрушек</b>
+              <p class="card-product__text">
+                <a class="card-product__link-cart" href="#">
+                  <b class="card-product__name">Большая корзинка для игрушек</b>
                   Диаметр 30 см, высота 30 см
                 </a>
-                <span class="catalog__price">
+                <span class="card-product__price">
                   <b>1 500 руб.</b>
                   <a href="#" class="modal-js">
-                    <svg class="catalog__price-icon" width="20" height="19" focusable="false">
+                    <svg class="card-product__price-icon" width="20" height="19" focusable="false">
                       <use xlink:href="img/icon-cart.svg#icon-cart"></use>
                     </svg>
                   </a>
@@ -172,7 +174,7 @@
       </div>
     </section>
     <section class="process-product">
-      <div class="process-product__wrapper">
+      <div class="process-product__container">
         <h2 class="process-product__headline">Процесс производства</h2>
         <div class="process-product__video">
           <picture>
@@ -233,8 +235,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright">
-        <b class="page-footer__copyright--text">Разработано</b>
-        <a class="button-link page-footer__copyright--link" href="https://htmlacademy.ru/intensive/adaptive">
+        <b class="page-footer__copyright-text">Разработано</b>
+        <a class="button-link page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="26" height="34" focusable="false">
             <use xlink:href="/img/logo-htmlacademy.svg#html-footer"></use>
           </svg>

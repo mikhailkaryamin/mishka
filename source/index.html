@@ -68,7 +68,7 @@
   <main class="page-main">
     <h1 class="visually-hidden">Мишка интернет магазин</h1>
     <section class="cute-stuff">
-      <div class="container cute-stuff__container">
+      <div class="cute-stuff__container">
         <h2 class="cute-stuff__headline">Милые штуки ручной работы для дома</h2>
         <ul class="cute-stuff__list">
           <li class="cute-stuff__item cute-stuff__item--light">
@@ -98,7 +98,7 @@
         </ul>
       </div>
     </section>
-    <section class="container knitted-baskets">
+    <section class="knitted-baskets">
       <div class="knitted-baskets__container">
         <div class="knitted-baskets__product-name">
           <h2 class="knitted-baskets__headline">Вязаные корзинки</h2>
@@ -154,7 +154,7 @@
         </div>
       </div>
     </section>
-    <section class="container container--desktop-padding-left about-us">
+    <section class="about-us">
       <div class="about-us__wrapper">
         <h2 class="about-us__headline">Коротко о нас:</h2>
         <ul class="about-us__list">
@@ -197,7 +197,7 @@
         </ul>
       </div>
     </section>
-    <section class="container container--desktop-padding-left reviews">
+    <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__headline">Отзывы</h2>
         <p class="reviews__text">
@@ -207,17 +207,17 @@
         </p>
         <div class="reviews__author">
           <cite>Анастасия Красильникова</cite>
-          <p class="reviews__text">
+          <p class="reviews__login">
             @misssssiskras
           </p>
         </div>
         <div class="reviews__button">
-          <button class="reviews__button--prev" type="button">
+          <button class="reviews__arrow reviews__arrow--prev" type="button">
             <span class="visually-hidden">
               Предыдущий отзыв
             </span>
           </button>
-          <button class="reviews__button--next" type="button">
+          <button class="reviews__arrow reviews__arrow--next" type="button">
             <span class="visually-hidden">
               Следующий отзыв
             </span>
@@ -227,7 +227,7 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="container container--desktop-padding-left">
+      <div class="contacts__container">
         <div class="contacts__information">
           <h2 class="contacts__headline">Контакты</h2>
           <span class="contacts__icon-flag">
@@ -258,7 +258,7 @@
           <a href="#" class="button contacts__button">Напиши нам</a>
         </div>
       </div>
-      <div class="contacts__map">
+      <div id="map" class="contacts__map">
       </div>
     </section>
   </main>
@@ -298,8 +298,8 @@
         </ul>
       </div>
       <div class="page-footer__copyright">
-        <b class="page-footer__copyright--text">Разработано</b>
-        <a class="button-link page-footer__copyright--link" href="https://htmlacademy.ru/intensive/adaptive">
+        <b class="page-footer__copyright-text">Разработано</b>
+        <a class="button-link page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="26" height="34" focusable="false">
             <use xlink:href="/img/logo-htmlacademy.svg#html-footer"></use>
           </svg>
@@ -334,10 +334,9 @@
       </div>
     </section>
   </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e7103658-91d1-4630-be12-cab488efad25
+  " type="text/javascript"></script>
   <script src="js/script.js"></script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBIAgEKnMBv6xCSi88ME9h9Ks-iwZjXgo&callback=initMap">
-    </script>
   <script src="js/picturefill.js"></script>
 </body>
 

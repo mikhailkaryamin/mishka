@@ -1,5 +1,22 @@
 .knitted-baskets {
+  position: relative;
   margin-bottom: 35px;
+  .container-mobile();
+  padding-top: 15px;
+  padding-bottom: 43px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 9px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 320px 7px;
+    background-position-x: -8px;
+  }
 }
 
 .knitted-baskets__container {
@@ -30,8 +47,10 @@
 }
 
 .knitted-baskets__product-information {
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
 }
 
 .knitted-baskets__description {
@@ -79,13 +98,23 @@
 @media (min-width: @tablet-width) {
   .knitted-baskets {
     min-height: 580px;
+    .container-tablet();
+    padding-top: 37px;
+    padding-bottom: 70px;
+
+    &::after {
+      bottom: 0;
+      height: 17px;
+      min-width: 768px;
+      background-size: 768px 17px;
+      background-position-x: -20px;
+    }
   }
 
   .knitted-baskets__container {
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 36px;
   }
 
   .knitted-baskets__product-name {
@@ -102,24 +131,27 @@
 
   .knitted-baskets__top-product {
     width: 100px;
+    padding-top: 10px;
     padding-right: 21px;
     line-height: 17px;
     text-align: center;
   }
 
   .knitted-baskets__product-information {
-    width: 50%;
-    padding-right: 45px;
+    width: 100%;
+    padding-top: 35px;
+    padding-right: 378px;
   }
 
   .knitted-baskets__description {
     min-height: 100px;
+    margin-bottom: 25px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .knitted-baskets__list {
-    margin-bottom: 10px;
+    margin-bottom: 41px;
   }
 
   .knitted-baskets__price {
@@ -137,22 +169,29 @@
 
   .knitted-baskets__image {
     position: absolute;
-    top: 150px;
+    top: 50px;
     right: 0;
     order: 1;
     width: 334px;
     height: 404px;
-    margin-left: auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .knitted-baskets {
     min-height: 706px;
-  }
+    .container-desktop();
+    padding-top: 111px;
+    padding-bottom: 100px;
 
-  .knitted-baskets__container {
-    padding-top: 55px;
+    &::after {
+      bottom: 4px;
+      left: 50px;
+      width: 1050px;
+      height: 23px;
+      background-size: 1050px 21px;
+      background-position-x: -25px;
+    }
   }
 
   .knitted-baskets__product-name {
@@ -176,15 +215,21 @@
   }
 
   .knitted-baskets__product-information {
+    padding-right: 585px;
     padding-left: 175px;
+  }
+
+  .knitted-baskets__description {
+    margin-bottom: 28px;
   }
 
   .knitted-baskets__list {
     margin-top: 10px;
+    margin-bottom: 36px;
   }
 
   .knitted-baskets__image {
-    top: 12px;
+    top: -115px;
     right: 0;
     z-index: -1;
     width: 525px;

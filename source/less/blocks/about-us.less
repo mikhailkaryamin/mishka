@@ -1,5 +1,6 @@
 .about-us {
-  padding-top: 12px;
+  .container-mobile();
+  padding-top: 4px;
 }
 
 .about-us__wrapper {
@@ -75,13 +76,12 @@
 @media (min-width: @tablet-width) {
   .about-us {
     margin-bottom: 22px;
-  }
-
-  .about-us__wrapper {
-    padding-top: 13px;
+    .container-tablet();
+    padding-top: 48px;
   }
 
   .about-us__headline {
+    margin: 0;
     font-size: 43px;
     line-height: 50px;
   }
@@ -89,6 +89,7 @@
   .about-us__list {
     flex-direction: row;
     margin: 0 auto;
+    padding-top: 53px;
   }
 
   .about-us__item {
@@ -101,6 +102,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .about-us {
+    padding-top: 55px;
+    padding-bottom: 25px;
+    .container-desktop-with-padding-left();
+  }
+
   .about-us__wrapper {
     max-width: 100%;
     padding: 0;

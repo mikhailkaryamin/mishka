@@ -33,3 +33,25 @@ window.addEventListener('keydown', function(evt){
     }
   }
 });
+
+//Maps
+
+ymaps.ready(init);
+  function init () {
+    var myMap = new ymaps.Map("map", {
+      center: [59.938631, 30.323055],
+      zoom: 18
+    }),
+
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: "Большая Конюшенная, д. 19/8, офис 101"
+    }, {
+      iconLayout: "default#image",
+      iconImageHref: "../img/icon-map-pin.svg",
+      iconImageSize: [67, 100],
+      iconImageOffset: [-33, -101]
+    });
+
+    myMap.geoObjects
+    .add(myPlacemark)
+  }
