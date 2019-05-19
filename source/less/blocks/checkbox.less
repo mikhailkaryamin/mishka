@@ -1,3 +1,8 @@
+.checkbox {
+  display: inline-block;
+  padding-left: 63px;
+}
+
 .checkbox__name {
   position: absolute;
   width: 2.2em;
@@ -23,14 +28,21 @@
 
 .checkbox__input:hover + .checkbox__name,
 .checkbox__input:focus + .checkbox__name {
+  transition: 0.3s;
   box-shadow: 0 0 0 0.1em #62d1ba;
 }
 
 .checkbox__input:active + .checkbox__name {
+  transition: 0.3s;
   box-shadow: 0 0 0 0.1em #c7c7c7;
 }
 
 @media (min-width: @tablet-width) {
+  .checkbox {
+    height: 2em;
+    padding-left: 80px;
+  }
+
   .checkbox__name {
     width: 2.5em;
     height: 2.5em;
