@@ -1,0 +1,26 @@
+.textarea {
+  width: 100%;
+  min-height: 143px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #444444;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .textarea {
+    max-width: 75%;
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .textarea {
+    min-height: 140px;
+    max-width: 80%;
+  }
+}
