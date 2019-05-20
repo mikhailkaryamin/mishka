@@ -70,9 +70,13 @@
     font-size: 0;
   }
 
-  .user-list__item:first-child {
-    border-right: 1px solid #e7e7e7;
-    border-left: 1px solid #e7e7e7;
+  .user-list__item {
+    min-height: 88px;
+
+    &:first-child {
+      border-right: 1px solid #e7e7e7;
+      border-left: 1px solid #e7e7e7;
+    }
   }
 
   .user-list__search-icon {
