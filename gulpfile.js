@@ -11,7 +11,6 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
-var pipeline = require("readable-stream").pipeline;
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -93,6 +92,10 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("clean", function () {
+  return del("build");
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -104,10 +107,6 @@ gulp.task("copy", function () {
     base: "source"
     })
     .pipe(gulp.dest("build"));
-});
-
-gulp.task("clean", function () {
-  return del("build");
 });
 
 gulp.task("refresh", function (done) {
