@@ -16,7 +16,6 @@
 
 .about-us__list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -33,6 +32,26 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+
+  &--money {
+    order: 3;
+  }
+
+  &--heart {
+    order: 5;
+  }
+
+  &--ball {
+    order: 2;
+  }
+
+  &--rocket {
+    order: 4;
+  }
+
+  &--gift {
+    order: 6;
+  }
 }
 
 .about-us__icon {
@@ -43,11 +62,13 @@
   display: block;
 
   &--flower {
+    left: 9px;
     width: 32px;
     height: 37px;
   }
 
   &--money {
+    left: 0;
     width: 47px;
     height: 27px;
   }
@@ -63,6 +84,7 @@
   }
 
   &--rocket {
+    left: -6px;
     width: 55px;
     height: 23px;
   }

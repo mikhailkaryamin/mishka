@@ -8,10 +8,13 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Мишка-каталог</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="source/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--inner">
     <div class="page-header__wrapper">
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -37,7 +40,7 @@
           <li class="user-list__item">
             <a href="#" class="user-list__search">
               <svg class="user-list__search-icon" width="18" height="18" focusable="false">
-                <use xlink:href="img/icon-search.svg#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
               Поиск по сайту
             </a>
@@ -45,7 +48,7 @@
           <li class="user-list__item">
             <a href="#" class="user-list__bracket">
               <svg class="user-list__basket-icon" width="21" height="18" focusable="false">
-                <use xlink:href="img/icon-cart.svg#icon-cart"></use>
+                <use xlink:href="#icon-cart"></use>
               </svg>
               Корзина: пока пуста
             </a>
@@ -93,9 +96,9 @@
                 </a>
                 <span class="card-product__price">
                   <b>1 200 руб.</b>
-                  <a href="#" class="modal-js">
+                  <a class="card-product__link-icon" href="#" class="modal-js">
                     <svg class="card-product__price-icon" width="20" height="19" focusable="false">
-                      <use xlink:href="img/icon-cart.svg#icon-cart"></use>
+                      <use xlink:href="#icon-cart"></use>
                     </svg>
                   </a>
                 </span>
@@ -127,9 +130,9 @@
                 </a>
                 <span class="card-product__price">
                   <b>690 руб.</b>
-                  <a href="#" class="modal-js">
+                  <a class="card-product__link-icon" href="#" class="modal-js">
                     <svg class="card-product__price-icon" width="20" height="19" focusable="false">
-                      <use xlink:href="img/icon-cart.svg#icon-cart"></use>
+                      <use xlink:href="#icon-cart"></use>
                     </svg>
                   </a>
                 </span>
@@ -161,9 +164,9 @@
                 </a>
                 <span class="card-product__price">
                   <b>1 500 руб.</b>
-                  <a href="#" class="modal-js">
+                  <a class="card-product__link-icon" href="#" class="modal-js">
                     <svg class="card-product__price-icon" width="20" height="19" focusable="false">
-                      <use xlink:href="img/icon-cart.svg#icon-cart"></use>
+                      <use xlink:href="#icon-cart"></use>
                     </svg>
                   </a>
                 </span>
@@ -203,7 +206,7 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__logo page-footer__logo--invis">
         <svg width="101px" height="34px" focusable="false">
-          <use xlink:href="/img/logo-footer.svg#footer-logo"></use>
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </div>
       <div class="page-footer__social social">
@@ -211,7 +214,7 @@
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#">
               <svg width="21px" height="21px" focusable="false">
-                <use xlink:href="img/icon-insta.svg#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
               <span class="visually-hidden">Мы в инстаграме</span>
             </a>
@@ -219,7 +222,7 @@
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">
               <svg width="14px" height="27px" focusable="false">
-                <use xlink:href="img/icon-fb.svg#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
               <span class="visually-hidden">Мы в facebook</span>
             </a>
@@ -227,7 +230,7 @@
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#">
               <svg width="23px" height="20px" focusable="false">
-                <use xlink:href="img/icon-twitter.svg#icon-twitter"></use>
+                <use xlink:href="#icon-twitter"></use>
               </svg>
               <span class="visually-hidden">Мы в twitter</span>
             </a>
@@ -237,8 +240,8 @@
       <div class="page-footer__copyright">
         <b class="page-footer__copyright-text">Разработано</b>
         <a class="button-link page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="26" height="34" focusable="false">
-            <use xlink:href="/img/logo-htmlacademy.svg#html-footer"></use>
+          <svg width="28" height="34" focusable="false">
+            <use xlink:href="#icon-logo-htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy</span>
         </a>
