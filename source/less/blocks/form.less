@@ -141,16 +141,6 @@
   opacity: 1;
 }
 
-.input:focus,
-.textarea:focus {
-  border-color: #62d1ba;
-}
-
-.input:focus + .form__icon {
-  fill: #62d1ba;
-  opacity: 1;
-}
-
 .form__icon {
   content: "";
   position: absolute;
@@ -212,6 +202,7 @@
 
     &--sub-button {
       padding-top: 0;
+      padding-bottom: 46px;
     }
 
     &--zigzag {
@@ -379,6 +370,31 @@
   .form__legend {
     width: 175px;
     padding-left: 66px;
+
+    &--type {
+      padding-top: 7px;
+      padding-left: 64px;
+    }
+
+    &--color {
+      padding-top: 16px;
+      padding-left: 60px;
+    }
+
+    &--name {
+      padding-top: 16px;
+      padding-left: 61px;
+    }
+
+    &--tel-mail {
+      padding-top: 11px;
+      padding-left: 61px;
+    }
+
+    &--add {
+      padding-top: 15px;
+      padding-left: 62px;
+    }
   }
 
   .form__icon {
@@ -387,7 +403,7 @@
 
   .form__option--color {
     width: 29%;
-    margin-right: 18px;
+    margin-right: 19px;
 
     &:nth-child(odd) {
       margin-right: 18px;

@@ -26,21 +26,49 @@
 }
 
 .contacts__list {
-  padding-bottom: 524px;
+  padding-bottom: 513px;
+  border-spacing: 0;
   line-height: 30px;
 }
 
 .contacts__field {
-  width: 70px;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  width: 75px;
+  padding-top: 10px;
+  padding-bottom: 21px;
   vertical-align: top;
 }
 
 .contacts__value {
   min-width: 180px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 21px;
+}
+
+.contacts__email {
+  position: relative;
+  transition: 0.8s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+
+  &:hover {
+    color: #46c1ae;
+
+    &::before {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__button {
@@ -85,7 +113,8 @@
   .contacts__headline {
     position: relative;
     flex: 1;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
+    margin-left: -4px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -93,11 +122,12 @@
   .contacts__icon-flag {
     display: block;
     width: 50px;
+    margin-top: -7px;
   }
 
   .contacts__list {
     width: 100%;
-    padding-bottom: 538px;
+    padding-bottom: 533px;
   }
 
   .contacts__list tbody {
@@ -115,6 +145,10 @@
     }
   }
 
+  .contacts__field {
+    width: 76px;
+  }
+
   .contacts__field,
   .contacts__value {
     padding-top: 0;
@@ -123,8 +157,8 @@
   .contacts__button {
     margin: 0 auto;
     margin-bottom: 55px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
     font-size: 17px;
   }
 
@@ -150,6 +184,7 @@
   }
 
   .contacts__headline {
+    min-height: 57px;
     flex: 0;
     margin: 0;
     margin-left: -5px;
@@ -160,7 +195,7 @@
   .contacts__icon-flag {
     content: "";
     position: absolute;
-    top: -8px;
+    top: 0;
     left: -110px;
     width: 47px;
     height: 81px;
@@ -170,7 +205,7 @@
     position: relative;
     margin-bottom: 50px;
     margin-left: -5px;
-    padding-top: 45px;
+    padding-top: 49px;
     padding-bottom: 0;
   }
 
@@ -180,10 +215,11 @@
 
   .contacts__line {
     width: 100%;
+    margin-bottom: 9px;
   }
 
   .contacts__field {
-    width: 72px;
+    width: 80px;
   }
 
   .contacts__button {

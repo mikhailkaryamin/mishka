@@ -11,6 +11,15 @@
   &--tel-mail {
     padding-top: 20px;
   }
+
+  &:focus {
+    border-color: #62d1ba;
+  }
+
+  &:focus + .form__icon {
+    fill: #62d1ba;
+    opacity: 1;
+  }
 }
 
 @media (min-width: @tablet-width) {
