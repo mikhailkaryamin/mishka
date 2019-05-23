@@ -72,7 +72,7 @@
     <h1 class="visually-hidden">Мишка интернет магазин</h1>
     <section class="cute-stuff">
       <div class="cute-stuff__container">
-        <h2 class="cute-stuff__headline">Милые штуки ручной работы для дома</h2>
+        <h2 class="cute-stuff__headline">Милые штуки ручной <br> работы для дома</h2>
         <ul class="cute-stuff__list">
           <li class="cute-stuff__item cute-stuff__item--light">
             <a href="#" class="cute-stuff__link cute-stuff__link--white-hover">
@@ -153,7 +153,9 @@
               alt="Экологически чистая пряжа" srcset="img/triple-set-mobile@2x.jpg 2x">
           </picture>
           <b class="knitted-baskets__price">Цена: 990 руб.</b>
-          <button class="button knitted-baskets__order modal-js" type="button">Заказать</button>
+          <a class="button knitted-baskets__order modal-js" href="#">
+            Заказать
+          </a>
         </div>
       </div>
     </section>
@@ -203,34 +205,34 @@
     <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="reviews__headline">Отзывы</h2>
-          <p class="reviews__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-            инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-            стильными, а также набирают больше лайков!
+        <p class="reviews__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+          инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+          стильными, а также набирают больше лайков!
+        </p>
+        <div class="reviews__author">
+          <span>Анастасия Красильникова</span>
+          <p class="reviews__login">
+            @misssssiskras
           </p>
-          <div class="reviews__author">
-            <span>Анастасия Красильникова</span>
-            <p class="reviews__login">
-              @misssssiskras
-            </p>
-          </div>
-          <div class="reviews__button">
-            <button class="reviews__arrow reviews__arrow--prev" type="button">
-              <svg class="reviews__icon-prev" width="50" height="26" focusable="false">
-                <use xlink:href="#icon-left-arrow"></use>
-              </svg>
-              <span class="visually-hidden">
-                Предыдущий отзыв
-              </span>
-            </button>
-            <button class="reviews__arrow reviews__arrow--next" type="button">
-              <svg class="reviews__icon-next" width="50" height="26" focusable="false">
-                <use xlink:href="#icon-right-arrow"></use>
-              </svg>
-              <span class="visually-hidden">
-                Следующий отзыв
-              </span>
-            </button>
+        </div>
+        <div class="reviews__button">
+          <button class="reviews__arrow reviews__arrow--prev" type="button">
+            <svg class="reviews__icon-prev" width="50" height="26" focusable="false">
+              <use xlink:href="#icon-left-arrow"></use>
+            </svg>
+            <span class="visually-hidden">
+              Предыдущий отзыв
+            </span>
+          </button>
+          <button class="reviews__arrow reviews__arrow--next" type="button">
+            <svg class="reviews__icon-next" width="50" height="26" focusable="false">
+              <use xlink:href="#icon-right-arrow"></use>
+            </svg>
+            <span class="visually-hidden">
+              Следующий отзыв
+            </span>
+          </button>
         </div>
         <a href="#" class="reviews__write button">Написать</a>
       </div>
@@ -250,7 +252,7 @@
                 e-mail:
               </td>
               <td class="contacts__value">
-                <a href="mailto:info@mimimishkashop.ru">
+                <a class="contacts__email" href="mailto:info@mimimishkashop.ru">
                   info@mimimishkashop.ru
                 </a>
               </td>
@@ -264,7 +266,7 @@
               </td>
             </tr>
           </table>
-          <a href="#" class="button contacts__button">Напиши нам</a>
+          <a href="#" class="button contacts__button">Напишите нам</a>
         </div>
       </div>
       <div id="map" class="contacts__map">
@@ -345,7 +347,7 @@
   </div>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e7103658-91d1-4630-be12-cab488efad25
   " type="text/javascript"></script>
-  <script src="js/script.js"></script>
+  <script src="js/main.min.js"></script>
   <script src="js/picturefill.js"></script>
 </body>
 
