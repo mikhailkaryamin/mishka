@@ -47,7 +47,7 @@ ymaps.ready(init);
       hintContent: "Большая Конюшенная, д. 19/8, офис 101"
     }, {
       iconLayout: "default#image",
-      iconImageHref: "../img/icon-map-pin.svg",
+      iconImageHref: "../mishka/img/icon-map-pin.svg",
       iconImageSize: [67, 100],
       iconImageOffset: [-33, -101]
     });
